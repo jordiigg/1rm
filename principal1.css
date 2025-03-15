@@ -1,0 +1,496 @@
+@font-face {
+  font-family: 'Heartless';
+  src: url('Heartless.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.carousel-control-prev-icon {
+  width: 50px;                /* Tamaño más grande */
+  height: 40px;               /* Tamaño más grande */
+  border-radius: 50%;         /* Hacerlo redondeado */
+}
+ /* Cambiar el color y aumentar el tamaño del icono de "siguiente" */
+.carousel-control-next-icon {
+  width: 50px;                /* Tamaño más grande */
+  height: 40px;               /* Tamaño más grande */
+  border-radius: 50%;         /* Hacerlo redondeado */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 50px;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
+}
+
+
+header {
+
+    background-color: black;
+    height: 85px;
+
+}
+
+.nav-item {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+.nav-link {
+
+    color: white !important;
+
+}
+
+.nav-link:hover {
+
+  color: rgb(129, 129, 129) !important;
+
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.navbar {
+    z-index: 15;
+    position: relative;
+    border-bottom: 2px solid white;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+.lupa {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.nav-link.active {
+
+    color: rgb(230, 0, 0) !important;
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.logogran, .img-fluid{
+
+    position: absolute;
+    height: 200px;
+    margin-top: -250px;
+    width: 300px;
+    
+}
+
+#benvingut {
+
+    position: absolute;
+    object-fit: cover;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 150px;
+    color: black;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.664);
+
+}
+
+.fletxes {
+
+    position: absolute;
+    margin-top: 350px;
+    z-index: 10;
+    
+}
+
+.fletxa {
+    position: relative;
+    height: 37px;
+    width: 60px;
+}
+
+.fletxa img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+}
+
+.fletxa-hover {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.fletxa:hover .fletxa-hover {
+    opacity: 1;
+}
+
+.fletxa:hover img:first-child {
+    opacity: 0;
+}
+
+.destacat {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 185px;
+
+}
+
+.destacat h1 {
+
+    position: relative;
+    margin: auto;
+    color: white;
+    font-size: 80px;
+    min-width: 250px;
+    max-width: 400px;
+    font-family: 'Heartless', sans-serif;
+
+}
+
+.fila1 {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+
+}
+
+.card {
+    text-align: center;
+    font-family: arial;
+    width: 100%;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(155, 155, 155, 0.349); /* Sombra permanente */
+    transition: transform 0.3s ease;
+    border: 1px solid #ccc;
+    flex-direction: row !important;
+    height: 500px !important; /* Transición para suavizar el efecto */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Desplaza la tarjeta hacia arriba en hover */
+}
+  
+  .price {
+    color: grey;
+    font-size: 28px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 16px; /* Aumentar el padding del botón */
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 80%; /* Cambiar a 80% para que cubra el 80% del div */
+    font-size: 22px; /* Aumentar el tamaño de la fuente del botón */
+    border-radius: 10px;
+    margin: 0 auto; /* Centrar el botón dentro del div */
+}
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+.card h1 {
+
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.divtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  padding: 50px;
+  height: 100%;
+  margin: auto; /* Asegúrate de que el div tenga una altura definida */
+}
+
+.divtext p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .imgdiv {
+      width: 130% !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .card {
+      flex-direction: column !important;
+      height: auto !important;
+
+       
+  }
+
+  .imgdiv {
+      width: 100% !important;
+      height: 700px !important;
+  }
+
+  .divtext {
+      padding: 40px;
+      text-align: center;
+      height: 450px;
+  }
+}
+
+
+
+.imgdiv {
+  margin-bottom: auto;
+  border-right: 1px solid gray;
+  height: 100%;
+  display: flex; /* Añadido para centrar la imagen */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;
+  border-right: 1px solid #d3d3d3; /* Camb */
+  box-shadow: 2px 2px 10px rgba(155, 155, 155, 0.329);
+  width: 70%; /* Centrar verticalmente */
+  padding: 10px;
+}
+
+.imgdiv img {
+  max-height: 100%; /* Limitar la altura máxima a 100% del contenedor */
+  max-width: 100%; /* Limitar el ancho máximo a 100% del contenedor */
+  height: auto; /* Mantener la altura automática para conservar la relación de aspecto */
+  width: auto; /* Mantener el ancho automático para conservar la relación de aspecto */
+}
+
+.totmid {
+
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+}
+
+footer {
+  border-top: 2px solid white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-media {
+
+  margin: 15px 0px 20px 0px;
+
+}
+
+.social-media a {
+
+  text-decoration: none;
+
+}
+
+.text-white {
+
+  margin: 5px;
+
+}
+
+.social-link {
+  display: inline-block; /* Asegúrate de que el enlace se comporte como un bloque */
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  height: 50px; /* Ajusta el tamaño según sea necesario */
+  background-size: cover; /* Asegura que la imagen cubra el área del enlace */
+  background-position: center; /* Centra la imagen */
+  transition: background-image 0.3s ease;
+  margin: 0px 7px; /* Añade una transición suave */
+}
+
+
+.social-link.twitter {
+  background-image: url('img/twitter-icon.png'); /* Logo por defecto */
+}
+
+.social-link.instagram {
+  background-image: url('img/instagram-icon.png'); /* Logo por defecto */
+}
+
+.social-link.youtube {
+  background-image: url('img/youtube-icon.png'); /* Logo por defecto */
+}
+
+/* Estilos para el hover */
+.social-link.twitter:hover {
+  background-image: url('img/twitter2.png'); /* Imagen al hacer hover */
+}
+
+.social-link.instagram:hover {
+  background-image: url('img/insta2.png'); /* Imagen al hacer hover */
+}
+
+.social-link.youtube:hover {
+  background-image: url('img/youtube2.png'); /* Imagen al hacer hover */
+}
+
+.footer-links a {
+  margin: 7px 15px;
+  color: rgb(129, 129, 129);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+}
+
+
+
+.footer-links a:hover {
+
+  color: rgb(182, 182, 182);
+
+}
+
+.copy {
+  border-top: 1px solid rgb(109, 109, 109);
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy p {
+
+  color:rgb(129, 129, 129);
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: -20px;
+
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+.preu {
+
+    color: #426B1F;
+    font-weight: bold;
+    font-size: 26px;
+
+}
+
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background:#e0e0e0;
+  padding: 15px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  flex-direction: row;
+}
+
+#cookie-banner p {
+  margin: 0;
+  font-size: 14px;
+  color: #111111;
+}
+
+#cookie-banner a {
+  color: #922626;
+  text-decoration: underline;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#cookie-banner a:hover {
+  color: #ff5252;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#cookie-banner button {
+  background-color: #a51f1f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  margin: 2px;
+}
+
+#cookie-banner button:hover {
+  background-color: #f03838;
+}
+
+.popover-container {
+
+  width: 80%;
+  margin-top: 10px;
+
+}
